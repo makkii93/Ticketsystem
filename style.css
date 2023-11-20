@@ -1,0 +1,80 @@
+/* CSS-Styling für das Ticketsystem */
+/* Dies ist nur ein visuelles Design und hat keine Funktionalität */
+
+/* Setzt den Basis-Stil für den gesamten Text */
+body {
+  font-family: Arial, sans-serif; /* Verwendet Arial oder eine ähnliche serifenlose Schriftart */
+  margin: 0; /* Entfernt den Außenabstand des Körpers */
+  padding: 0; /* Entfernt den Innenabstand des Körpers */
+  background-color: #f4f4f4; /* Setzt die Hintergrundfarbe des Körpers */
+}
+
+/* Container für den Inhalt der Seite */
+.container {
+  width: 80%; /* Setzt die Breite des Containers auf 80% der Anzeigebreite */
+  margin: 20px auto; /* Zentriert den Container und setzt einen Abstand von 20px nach außen */
+  background-color: #fff; /* Setzt die Hintergrundfarbe des Containers */
+  padding: 20px; /* Setzt den Innenabstand des Containers */
+  border-radius: 5px; /* Rundet die Ecken des Containers */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Fügt einen Schatten um den Container hinzu */
+}
+
+/* Stil für jedes Ticket */
+.ticket, .fahrplan {
+  border: 1px solid #ccc; /* Setzt einen 1px breiten soliden Rand um jedes Ticket */
+  border-radius: 5px; /* Rundet die Ecken des Tickets */
+  padding: 10px; /* Setzt den Innenabstand des Tickets */
+  margin-bottom: 10px; /* Setzt den Abstand zwischen den Tickets */
+  background-color: #f9f9f9; /* Setzt die Hintergrundfarbe des Tickets */
+}
+
+/* Stil für die Überschrift jedes Tickets */
+.ticket h2, .fahrplan h2 {
+  margin-top: 0; /* Entfernt den oberen Abstand der Überschrift */
+}
+
+/* Stil für den Textinhalt jedes Tickets */
+.ticket p, .fahrplan p{
+  margin-bottom: 5px; /* Setzt den Abstand am unteren Rand des Textinhalts */
+}
+
+/* Stil für alle Schaltflächen */
+button {
+  padding: 5px 10px; /* Setzt den Innenabstand der Schaltflächen */
+  margin-top: 5px; /* Setzt den oberen Abstand der Schaltflächen */
+  border: none; /* Entfernt den Rand der Schaltflächen */
+  border-radius: 3px; /* Rundet die Ecken der Schaltflächen */
+  background-color: #337ab7; /* Setzt die Hintergrundfarbe der Schaltflächen */
+  color: white; /* Setzt die Textfarbe der Schaltflächen auf Weiß */
+  cursor: pointer; /* Ändert den Mauszeiger beim Überfahren der Schaltflächen */
+}
+
+/* Stil für Schaltflächen beim Hovern */
+button:hover {
+  background-color: #23527c; /* Ändert die Hintergrundfarbe der Schaltflächen beim Überfahren */
+}
+
+/* Stil für die Schaltfläche "Ticket bearbeiten" beim Hovern */
+.edit-button:hover {
+  background-color: #23527c; /* Ändert die Hintergrundfarbe der Schaltfläche beim Überfahren */
+}
+
+/* Stil für die Schaltfläche "Ticket löschen" beim Hovern */
+.delete-button:hover {
+  background-color: #23527c; /* Ändert die Hintergrundfarbe der Schaltfläche beim Überfahren */
+}
+
+/* Stil für die Eingabefelder */
+input[type="text"] {
+  padding: 5px; /* Setzt den Innenabstand der Eingabefelder */
+  margin-bottom: 5px; /* Setzt den Abstand zwischen den Eingabefeldern */
+  border: 1px solid #ccc; /* Setzt einen soliden Rand um die Eingabefelder */
+  border-radius: 3px; /* Rundet die Ecken der Eingabefelder */
+}
+
+/* Optional: Ändern des Fokus-Stils der Eingabefelder */
+input[type="text"]:focus {
+  outline: none; /* Entfernt die Standard-Fokus-Rahmen */
+  border-color: #337ab7; /* Ändert die Randfarbe beim Fokus */
+  box-shadow: 0 0 5px rgba(51, 122, 183, 0.5); /* Fügt einen Schatten hinzu, wenn das Feld den Fokus erhält */
+}

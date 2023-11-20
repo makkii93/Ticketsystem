@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ticketsystem</title>
+  <link rel="stylesheet" href="style.css"> <!-- Verbindung zur externen CSS-Datei -->
+</head>
+<body>
+
+  <div class="container"> <!-- Container für den Hauptinhalt -->
+    <h1>Ticketsystem</h1> <!-- Überschrift der Seite -->
+
+    <!-- Erstellen eines neuen Tickets -->
+    <div class="ticket"> <!-- Bereich für ein neues Ticket -->
+      <h2>Neues Ticket erstellen</h2> <!-- Überschrift für die Ticketerstellung -->
+      <form method="post" action="index.php"> <!-- Das Formular sendet die Daten an "process_ticket.php" -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="iban">IBAN:</label>
+        <input type="text" id="iban" name="iban" required><br><br>
+
+        <label for="direction">Richtung:</label>
+        <select id="direction" name="direction" required>
+          <option value="Wien">Wien</option>
+          <option value="Linz">Linz</option>
+          <option value="Wels">Wels</option>
+          <option value="Salzburg">Salzburg</option>
+          <option value="Ansfelden">Ansfelden</option>
+        </select><br><br>
+
+        <button type="submit" name="submit">Ticket erstellen</button> <!-- Sendet das Formular ab -->
+      </form>
+
+</body>
+</html>
